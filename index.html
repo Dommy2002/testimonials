@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Section</title>
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        /* Testimonials Section Styling */
+        #testimonials {
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            padding: 60px 20px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            padding-top:1.5px;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #testimonials h1 {
+            font-size: 3em;
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-family: 'Lora', serif;
+            font-weight: 700;
+        }
+
+        #testimonials h2 {
+            font-size: 1.8em;
+            color: #4b5563;
+            margin-bottom: 20px;
+            font-family: 'Lora', serif;
+        }
+
+        #testimonials p {
+            font-size: 1.1em;
+            color: #6b7280;
+            margin-bottom: 60px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonials-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            background-color: white;
+            padding: 30px 20px 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            background-color: black;
+        }
+
+        /* Profile Image */
+        .testimonial-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 4px solid #6366f1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Enlarge the image on hover */
+        .testimonial-img:hover {
+            transform: scale(1.2); /* Increase image size by 20% */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+        }
+
+        .testimonial h3 {
+            font-size: 1.2em;
+            color: #1f2937;
+            margin-bottom: 15px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .testimonial blockquote {
+            font-size: 1em;
+            font-style: italic;
+            color: #4b5563;
+            line-height: 1.6;
+            position: relative;
+            padding: 0 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .testimonial blockquote:before,
+        .testimonial blockquote:after {
+            content: '"';
+            font-size: 2em;
+            color: #6366f1;
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .testimonial blockquote:before {
+            top: -10px;
+            left: 10px;
+        }
+
+        .testimonial blockquote:after {
+            bottom: -10px;
+            right: 10px;
+        }
+
+        /* Hover Effects for Text */
+        .testimonial:hover h3 {
+            transform: scale(1.05); /* Slightly enlarge the name */
+            color: ; /* Change text color */
+        }
+
+        .testimonial:hover blockquote {
+            transform: scale(1.05); /* Slightly enlarge the testimonial */
+            color: #6366f1; /* Change text color */
+        }
+
+    </style>
+</head>
+<body>
+    <section id="testimonials">
+        <div class="testimonials-container">
+            <h1>Testimonials</h1>
+            <h2>What Our Users Say</h2>
+            <p>
+                At Global Book Exchange, we believe in delivering exceptional value to our users. Here’s what some of our 
+                readers have to say about their experience with us:
+            </p>
+
+            <div class="testimonials-wrapper">
+                <div class="testimonial">
+                    <img src="img/test-1.jpg" alt="Sarah L." class="testimonial-img">
+                    <h3>Sarah L., Literature Student</h3>
+                    <blockquote>
+                        "Global Book Exchange has completely transformed my reading experience. I’ve been able to access books that I 
+                        would never have found elsewhere, and it has greatly enhanced my academic studies."
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <img src="img/test-2.jpeg" alt="Michael K." class="testimonial-img">
+                    <h3>Michael K., Avid Reader</h3>
+                    <blockquote>
+                        "This platform is a gem for book lovers! I’ve been able to discover so many amazing authors and genres that I 
+                        wouldn’t have considered before. The community is also fantastic – I’ve made great friends through the forums."
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <img src="img/test-3.jpeg" alt="John P." class="testimonial-img">
+                    <h3>John P., Researcher</h3>
+                    <blockquote>
+                        "The academic resources available on Global Book Exchange are second to none. It has become an indispensable tool 
+                        for my research projects. I would highly recommend it to any scholar or student."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
